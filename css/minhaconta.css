@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff; /*cor de fundo*/
+}
+
+/*HEADER*/
+.topo {
+    background-color: #0044ff;
+    color: white;
+    text-align: center;
+    padding: 8px; /*espaçamento iterno*/
+    font-size: 12px;
+    font-weight: bold;
+}
+
+header {
+    background-color: #000;
+    color: white;
+}
+
+.cabecalho-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+
+
+.caixinha {
+    display: flex;
+    width: 40%;
+}
+
+.caixinha input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    border: none; /*não tem*/
+}
+
+.caixinha .icon {
+    width: 50px;
+    padding: 8px 15px;
+    border-radius: 0 20px 20px 0;
+    background: #fff;
+    cursor: pointer; /*coloca a mão*/
+    box-sizing: border-box; /*Define como a largura e altura do elemento*/
+}
+
+.icons .icon {
+    margin-left: 20px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+
+.nav-menu {
+    background-color: #0044ff;
+}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none; /*não tem*/
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block; /*ocupa a linha inteira*/
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* BENEFÍCIOS BAR */
+.beneficios {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    border-bottom: 3px solid #0044ff;
+}
+
+.beneficios-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0 30px;
+}
+
+.beneficios-item .icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+
+.beneficios-item strong {
+    font-size: 16px;
+    display: block;
+}
+
+.beneficios-item p {
+    font-size: 11px;
+    color: #ccc;
+}
+
+/* MINHA CONTA*/
+
+.titulo {
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo h2 {
+    color: #0d47c7;
+    margin-bottom: 5px;
+}
+
+.titulo p {
+    color: #0d47c7;
+    font-size: 14px;
+}
+
+.login-area {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+.login-area .icon {
+    width: 18px;
+    height: 18px;
+}
+
+.card {
+    background: #dcdcdc;
+    padding: 20px;
+    width: 400px;
+    border-radius: 4px; /*borda*/
+}
+
+.card h3 {
+    border-bottom: 2px solid #0d47c7; /*borda na parte inferior*/
+    padding-bottom: 8px; /*espaçamento interno entre a borda inferior*/
+    margin-bottom: 15px; /*espaçamento externo*/
+    font-size: 15px;
+}
+
+.card label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.card input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+}
+
+.link {
+    font-size: 12px;
+    color: blue;
+    display: block;
+    margin-top: 5px;
+}
+
+.card button {
+    background: #0d47c7;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.google {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    background: #0d47c7;
+    color: #f6f2f2;
+    padding: 8px;
+    width: 195px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+/*FOOTER*/
+.rodape {
+    background: #000;
+    color: #fff;
+    padding: 40px;
+}
+
+.ofertas-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.ofertas-email strong {
+    font-size: 16px;
+    color: #fff;
+}
+
+.ofertas-email input {
+    padding: 12px 15px;
+    width: 300px;
+    border: none;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.ofertas-email button {
+    background: #0044ff;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 13px;
+}
+
+.informacao-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.coluna {
+    width: 22%;
+}
+
+.coluna h3 {
+    margin-bottom: 25px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #444;
+    font-size: 15px;
+    color: #fff;
+}
+
+.coluna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coluna ul li {
+    margin: 12px 0;
+    font-size: 11px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociais .icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.titulo-contato {
+    margin-top: 30px;
+}
+
+.informacoes-contato {
+    margin-bottom: 30px;
+}
+
+.contato-elemento {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.contato-elemento .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.contato-elemento div {
+    font-size: 11px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.contato-elemento strong {
+    font-size: 12px;
+}
+
+.input-footer {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    font-family: inherit;
+    outline: none;
+}
+
+.mensagem-footer {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    font-family: inherit;
+    outline: none;
+    height: 90px;
+    resize: none;
+}
+
+.enviar-footer {
+    width: 100%;
+    padding: 14px;
+    background: #0044ff;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.cartoes {
+    display: flex;
+    gap: 10px;
+}
+
+.cartoes img {
+    height: 25px;
+    background: #fff;
+    padding: 2px;
+    border-radius: 2px;
+}

@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+/*HEADER*/
+.topo-aviso {
+    background-color: #0044ff;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+header {
+    background-color: #000;
+    color: white;
+}
+
+.cabecalho-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+
+.caixa-busca {
+    display: flex;
+    width: 40%;
+}
+
+.caixa-busca input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+}
+
+.caixa-busca .icon {
+    width: 50px;
+    padding: 8px 15px;
+    border-radius: 0 20px 20px 0;
+    background: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.acoes-usuario .icon {
+    margin-left: 20px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+
+.menu-topo {
+    background-color: #0044ff;
+}
+
+.menu-topo ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu-topo a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* BARRA DE BENEFÍCIOS */
+.barra-beneficios {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    border-bottom: 3px solid #0044ff;
+}
+
+.item-beneficio {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0 30px;
+}
+
+.item-beneficio .icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+
+.item-beneficio strong {
+    font-size: 16px;
+    display: block;
+}
+
+.item-beneficio p {
+    font-size: 11px;
+    color: #ccc;
+}
+
+/* CADASTRO */
+
+.titulo {
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo h2 {
+    color: #0d47c7;
+    margin-bottom: 5px;
+}
+
+.titulo p {
+    color: #0d47c7;
+    font-size: 14px;
+}
+
+.cadastro-area {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.card-cadastro {
+    background: #dcdcdc;
+    padding: 20px;
+    width: 500px;
+    border-radius: 4px;
+}
+
+.card-cadastro h3 {
+    border-bottom: 2px solid #0d47c7;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.card-cadastro label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-cadastro input[type="text"],
+.card-cadastro input[type="email"],
+.card-cadastro input[type="password"],
+.card-cadastro select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.linha-dupla {
+    display: flex;
+    gap: 15px;
+}
+
+.linha-dupla div {
+    flex: 1;
+}
+
+.card-cadastro button.botao-cadastrar {
+    background: #0d47c7;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.card-cadastro button.botao-cadastrar:hover {
+    background: #0a369d;
+}
+
+.dados-pf-pj {
+    margin-top: 10px;
+    background: #e9e9e9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/*FOOTER*/
+.rodape {
+    background: #000;
+    color: #fff;
+    padding: 40px;
+}
+
+.ofertas-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.ofertas-email strong {
+    font-size: 16px;
+    color: #fff;
+}
+
+.ofertas-email input {
+    padding: 12px 15px;
+    width: 300px;
+    border: none;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.ofertas-email button {
+    background: #0044ff;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 13px;
+}
+
+.rodape-colunas {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.coluna {
+    width: 22%;
+}
+
+.coluna h3 {
+    margin-bottom: 25px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #444;
+    font-size: 15px;
+    color: #fff;
+}
+
+.coluna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coluna ul li {
+    margin: 12px 0;
+    font-size: 11px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociais .icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.titulo-contato {
+    margin-top: 30px;
+}
+
+.informacoes-contato {
+    margin-bottom: 30px;
+}
+
+.contato-elemento {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.contato-elemento .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.contato-elemento div {
+    font-size: 11px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.contato-elemento strong {
+    font-size: 12px;
+}
+
+.input-rodape {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    font-family: inherit;
+    outline: none;
+}
+
+.texto-rodape {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    font-family: inherit;
+    outline: none;
+    height: 90px;
+    resize: none;
+}
+
+.botao-enviar {
+    width: 100%;
+    padding: 14px;
+    background: #0044ff;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.cartoes {
+    display: flex;
+    gap: 10px;
+}
+
+.cartoes img {
+    height: 25px;
+    background: #fff;
+    padding: 2px;
+    border-radius: 2px;
+}

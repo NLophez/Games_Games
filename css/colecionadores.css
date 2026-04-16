@@ -1,0 +1,706 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/*Topo azul*/
+.topo-azul {
+    background-color: #0044ff;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* Cabeçalho principal */
+.cabecalho-principal {
+    background-color: #000;
+    color: white;
+}
+
+.conteudo-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+/*icones - Buscar */
+
+.barra_buscar {
+    display: flex;
+    width: 40%;
+}
+
+.barra_buscar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+}
+
+.barra_buscar .icon {
+    width: 50px;
+    padding: 8px 15px;
+    border-radius: 0 20px 20px 0;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+/*Icones - conversa, caminhão, usuario, carrinho*/
+.acoes-usuario .icon {
+    margin-left: 20px;
+    width: 22px;
+    height: 22px;
+}
+
+/* Menu principal */
+.menu-categorias {
+    background-color: #0044ff;
+}
+
+.menu-categorias ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu-categorias a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+/* Banner Beneficios - Giulia*/
+.beneficios {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    border-bottom: 3px solid #0044ff;
+}
+
+.beneficios-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0 30px;
+}
+
+.beneficios-item .icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+
+.beneficios-item strong {
+    font-size: 16px;
+    display: block;
+}
+
+.beneficios-item p {
+    font-size: 11px;
+    color: #ccc;
+}
+
+
+/* conteiner Navegação Ex.*/
+.navegação-extra {
+    padding: 15px 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/*Menu secundario*/
+
+.fromatacao_menu_secundario {
+    display: flex;
+    align-items: center;
+    color: #999;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.fromatacao_menu_secundario img {
+    margin-right: 5px;
+}
+
+/* Aquela linhazinha cinza*/
+.divisor-linha {
+    display: inline-block;
+    height: 12px;
+    width: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.fromatacao_menu_secundario strong {
+    color: #000;
+}
+
+
+/* Linha cinza fininha */
+.linha-cinza {
+    border: 0;
+    border-top: 1px solid #aca8a8;
+    margin-bottom: 0;
+}
+
+/* A barra branca com a sombra */
+.menu-secundario {
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+
+    /* Sombriado */
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+/*Bloco separador*/
+.bloco-separador {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-secundario a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.barra-separadora {
+    color: #000;
+    font-size: 13px;
+}
+
+
+
+
+/* Título (produtos mais vendidos) e as linhas laterais */
+
+.linha-titulo-secao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 0 30px 0;
+}
+
+
+/*Linhas laterais*/
+
+.linha-decorativa {
+    flex: 0 1 300px;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+
+/*formatação do titulo*/
+
+.titulo-secao {
+    text-align: center;
+    color: #444;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+
+
+
+/* Área externa da vitrine para segurar as setas */
+
+.container-vitrine {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* setinhas */
+
+.seta-vitrine {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #000;
+}
+
+.seta-esquerda {
+    left: -30px;
+}
+
+.seta-direita {
+    right: -30px;
+}
+
+
+
+/* Grade de Produtos FLUTUANTES 001 */
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+
+/* cartão do Produto */
+
+.cartao-produto {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Onde fica os produtinhos*/
+.imagem-produto {
+    background-color: #ffffff;
+    padding: 20px 10px;
+}
+
+.imagem-produto img {
+    max-width: 100%;
+    height: 170px;
+}
+
+/* Bloco de informações - (Fundo Branco) */
+.info-produto {
+    background-color: #ffffff;
+    padding: 15px 10px;
+    border-top: 1px solid #eee;
+}
+
+.info-produto h3 {
+    font-size: 13px;
+    color: #333;
+    font-weight: normal;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+/*informacoes de produto */
+
+.preco-antigo {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 11px;
+}
+
+.preco-atual {
+    color: #0044ff;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 3px 0;
+}
+
+.parcelamento {
+    font-size: 11px;
+    color: #999;
+}
+
+.parcelamento strong {
+    color: #333;
+    font-weight: bold;
+}
+
+
+/* Seção  de Colecionadores */
+
+.container-institucional {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    align-items: flex-start;
+}
+
+/* Menu Lateral */
+.menu-lateral {
+    flex: 0 0 180px;
+}
+
+.menu-lateral h3 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.menu-lateral ul {
+    list-style: none;
+}
+
+.menu-lateral li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.seta-lateral {
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 8px;
+    color: #000;
+}
+
+.menu-lateral a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.menu-lateral a:hover {
+    color: #0044ff;
+}
+
+/* Texto Institucional lateral (Lado Direito) */
+.texto-institucional {
+    flex: 1;
+}
+
+.titulo-destaque {
+    font-size: 32px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+
+.texto-institucional p {
+    font-size: 14px;
+    color: #000;
+    line-height: 1.8;
+    margin-bottom: 4px;
+}
+
+.palavra_azul {
+    color: #0044ff;
+}
+
+
+/*VITINE 02*/
+
+/* SEGUNDA VITRINE ( COM 3 COLUNAS) */
+
+.vitrine-secundaria {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Grade de 3 colunas */
+.grade-produtos-tres {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+
+/* Card com fundo branco e a sombra */
+.cartao-produto-clean {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+/*Animaçãozinha*/
+.cartao-produto-clean:hover {
+    transform: translateY(-3px);
+}
+
+.imagem-produto-clean {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-produto-clean img {
+    max-width: 100%;
+    height: 220px;
+}
+
+/* Info sem borda superior e centralizada */
+.info-produto-clean {
+    background-color: #ffffff;
+    padding: 15px 15px 25px 15px;
+}
+
+.info-produto-clean h3 {
+    font-size: 13px;
+    color: #000;
+    font-weight: bold;
+    height: 35px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.preco-unico {
+    color: #0044ff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*Botão comprar*/
+.btn-comprar {
+    color: white;
+    background: #376cff;
+    border: none;
+    padding: 7px 15px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* Container - paginamento - seletor de paginas */
+.container-paginamento {
+    display: flex;
+    justify-content: center;
+}
+
+.paginamento {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+
+/* Itens da Pagina */
+.pagina-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0070cd;
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    transition: 0.2s;
+}
+
+/* efeitinho */
+.pagina-item:hover {
+    background-color: #f5f5f5;
+}
+
+/* NA Página Atual */
+.pagina-item.ativa {
+    background-color: #0070cd;
+    color: #ffffff;
+}
+
+/* Ajuste do botão Próximo pra ficar mais bonitinho*/
+.pagina-item.proximo {
+    font-weight: normal;
+    font-size: 13px;
+    width: 70px;
+}
+
+
+
+/* RODAPÉ */
+.rodape {
+    background: #000;
+    color: #fff;
+    padding: 40px;
+}
+
+.ofertas-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.ofertas-email strong {
+    font-size: 16px;
+    color: #fff;
+}
+
+.ofertas-email input {
+    padding: 12px 15px;
+    width: 300px;
+    border: none;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.ofertas-email button {
+    background: #0044ff;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 13px;
+}
+
+.informacoes-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.coluna {
+    width: 22%;
+}
+
+.coluna h3 {
+    margin-bottom: 25px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #444;
+    font-size: 15px;
+    color: #fff;
+}
+
+.coluna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coluna ul li {
+    margin: 12px 0;
+    font-size: 11px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociais .icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.titulo-contato {
+    margin-top: 30px;
+}
+
+.informacoes-contato {
+    margin-bottom: 30px;
+}
+
+.contato-elemento {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.contato-elemento .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.contato-elemento div {
+    font-size: 11px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.contato-elemento strong {
+    font-size: 12px;
+}
+
+.input-footer {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    font-family: inherit;
+    outline: none;
+}
+
+.mensagem-footer {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    font-family: inherit;
+    outline: none;
+    height: 90px;
+    resize: none;
+}
+
+.enviar-footer {
+    width: 100%;
+    padding: 14px;
+    background: #0044ff;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.cartoes {
+    display: flex;
+    gap: 10px;
+}
+
+.cartoes img {
+    height: 25px;
+    background: #fff;
+    padding: 2px;
+    border-radius: 2px;
+}
